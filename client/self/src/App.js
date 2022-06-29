@@ -27,7 +27,7 @@ function App() {
   }
   return (
     <div className="App">
-      <p onClick={(e)=>{clickevn(e)}}>Helloe{selecotr}</p>
+      <p onClick={(e)=>{clickevn(e)}}>Helloed{selecotr}</p>
       <p onClick={(e)=>{click2evn(e)}}>Second Click</p>
     </div>
   );
