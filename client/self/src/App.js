@@ -3,6 +3,9 @@ import {useSelector , useDispatch} from "react-redux"
 import {up} from "./reducer/numberslice"
 import {initthunk} from "./reducer/numberslice"
 import {BrowserRouter , Route , Routes} from "react-router-dom"
+import Navbar from './components/Navbar';
+import Form from './components/Form';
+import Home from './components/Home';
 
 function App() {
   const selecotr = useSelector(state=>state.counter.number);
@@ -27,8 +30,20 @@ function App() {
   }
   return (
     <div className="App">
-      <p onClick={(e)=>{clickevn(e)}}>Helloed{selecotr}</p>
-      <p onClick={(e)=>{click2evn(e)}}>Second Click</p>
+      <BrowserRouter>
+      <Navbar/>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/join' element={<Form/>}/>
+          <Route/>
+          <Route/>
+        </Routes>
+      </BrowserRouter>
+      
+
+      
+
+      
     </div>
   );
 }
