@@ -2,11 +2,14 @@ import React from 'react'
 import Navbar from './Navbar'
 import Form  from './Form'
 import Slider from './Slider'
+import Slider2 from './Slider2'
 const Home = () => {
   return (
-    <div className='flex justify-center items-center w-full h-screen border-x-4'>
-    <Slider/>
+    <div className='mx-96'>
+    <Slider2/>   
     </div>
+       
+   
   )
 }
 
