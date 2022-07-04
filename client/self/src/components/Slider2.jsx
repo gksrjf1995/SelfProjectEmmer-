@@ -9,6 +9,7 @@ const Slider2 = () => {
         slidesToShow: 1,
         slidesToScroll: 1
       };
+      console.log("회사컴 추가");
       return (
         <Slider {...settings}>
           <div>

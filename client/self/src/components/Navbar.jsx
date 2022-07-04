@@ -31,7 +31,7 @@ const Navbar = () => {
     }
     setopen(current=>!current);
     console.log(open);
-  }
+  }     
   
   return (
     <nav class="bg-green-200 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
